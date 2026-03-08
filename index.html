@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Dayo 🎂</title>
+
+<style>
+
+body{
+margin:0;
+font-family: "Georgia", serif;
+background:#2b0040;
+color:gold;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+h1{
+font-size:60px;
+animation:sparkle 3s infinite alternate;
+}
+
+@keyframes sparkle{
+0%{text-shadow:0 0 10px gold;}
+50%{text-shadow:0 0 25px gold,0 0 40px gold;}
+100%{text-shadow:0 0 10px gold;}
+}
+
+.tagline{
+font-size:22px;
+margin-top:10px;
+}
+
+/* Gallery */
+
+.gallery{
+padding:60px 20px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+iframe{
+width:100%;
+height:500px;
+border:none;
+border-radius:10px;
+}
+
+/* Text Sections */
+
+.section{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+line-height:1.8;
+font-size:20px;
+}
+
+/* Final Message */
+
+.final{
+font-size:24px;
+padding:80px 20px;
+}
+
+/* Floating Hearts */
+
+.heart{
+position:fixed;
+bottom:-20px;
+color:pink;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-100vh);}
+}
+
+/* Spotify Player */
+
+.music{
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero">
+<h1>HAPPY BIRTHDAY LEGEND HD 🎂</h1>
+<p class="tagline">Today we celebrate the amazing person you are.</p>
+
+<div class="music">
+<iframe style="border-radius:12px"
+src="https://open.spotify.com/embed/track/0nlERwr8m4Ks1RYYuTVm0C"
+width="300"
+height="80"
+frameborder="0"
+allowfullscreen
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+</div>
+
+</div>
+
+<!-- VIDEO GALLERY -->
+
+<div class="gallery">
+
+<h2>Moments of You ✨</h2>
+
+<div class="video-grid">
+
+<iframe src="https://www.tiktok.com/embed/7614956942947077397"></iframe>
+
+<iframe src="https://www.tiktok.com/embed/7614958891633249557"></iframe>
+
+<iframe src="https://www.tiktok.com/embed/7614963698678942997"></iframe>
+
+</div>
+
+</div>
+
+<!-- BIRTHDAY MESSAGE -->
+
+<div class="section">
+
+<p>
+
+HAPPY BIRTHDAY OLADIMEJI TEMIDAYO DEBORAH.  
+Today is not just about celebrating your age, but celebrating the beautiful soul you are.
+
+You carry a light that quietly warms the hearts of people around you.  
+I hope today reminds you of how deeply appreciated you are.  
+May your laughter be louder today and your smile wider than ever.
+
+You deserve moments that make your heart feel full.
+
+May this new chapter of your life unfold with beautiful surprises.  
+I hope every dream you hold gently in your heart begins to find its way to reality.
+
+May today bring you the same happiness you give to others.
+
+Your kindness, warmth, and spirit deserve to be celebrated.  
+May this birthday mark the beginning of even greater things in your life.
+
+Wait.... you're legal now right? 😭😭✨️
+
+May love, peace, and joy surround you like a quiet blessing.
+
+Thank you for being the wonderful person that you are.
+
+Happy birthday, and may your life continue to bloom in the most beautiful ways.
+
+</p>
+
+</div>
+
+<!-- PRAYER SECTION -->
+
+<div class="section">
+
+<h2>Birthday Prayers 🙏</h2>
+
+<p>
+
+I pray that this new year of your life begins with peace resting in your heart.
+
+May God guide every step you take in the coming days.
+
+May your path be filled with favor, grace, and divine protection.  
+May every door meant for you open at the right time.
+
+I pray that your heart will never lose its beautiful kindness.
+
+May God surround you with love that is genuine and lasting.
+
+May wisdom guide your decisions and strength carry you through challenges.
+
+I pray that goodness and mercy will walk beside you always.
+
+May God’s light continue to shine upon your life.
+
+And may this birthday be the beginning of your most blessed year yet.
+
+</p>
+
+</div>
+
+<!-- FINAL MESSAGE -->
+
+<div class="final">
+
+<p>
+
+This little corner of the internet is yours today.
+
+Happy Birthday once again Dayo.
+
+I love you. It doesn’t feel weird saying that 😭
+
+</p>
+
+</div>
+
+<script>
+
+/* Floating hearts generator */
+
+function createHeart(){
+const heart=document.createElement("div")
+heart.classList.add("heart")
+heart.innerHTML="❤"
+heart.style.left=Math.random()*100+"vw"
+heart.style.fontSize=(Math.random()*20+10)+"px"
+document.body.appendChild(heart)
+
+setTimeout(()=>{
+heart.remove()
+},8000)
+}
+
+setInterval(createHeart,500)
+
+</script>
+
+</body>
+</html>
